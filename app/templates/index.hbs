@@ -1,0 +1,12 @@
+<ul>
+  {{#each model as |email|}}
+    <li>
+      {{#link-to "email" email.id}}
+        {{email.from}}<br>
+        <p class="message">{{email.message}}</p>
+      {{/link-to}}
+      <hr>
+    </li>
+  {{/each}}
+</ul>
+{{outlet}}

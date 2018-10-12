@@ -1,0 +1,20 @@
+<form onsubmit={{action "createEmail"}}>
+	<div>
+		<label for="from">From</label>
+		{{input type="text" id="from" value=from}}
+	</div>
+	<div>
+		<label for="to">To</label>
+		{{input type="text" id="to" value=to}}
+	</div>
+	<div>
+		<label for="subject">Subject</label>
+		{{input type="text" id="subject" value=subject}}
+	</div>
+	<div>
+		<label for="message">To</label>
+	  	{{textarea rows="8" id="message" cols="80" value=message}}
+	</div>
+
+	<button type="submit">Compose</button>
+</form>

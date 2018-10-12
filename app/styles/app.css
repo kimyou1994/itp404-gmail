@@ -1,0 +1,43 @@
+#nav {
+	font-size: 20px;
+	position: fixed;
+	padding-left: 5px;
+}
+form {
+	width: 50%;
+	margin-left: 100px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 10px;
+	margin-left: 100px;
+	width: 600px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.content {
+	margin-left: 100px;
+	border: 1px solid black;
+}
+
+.message {
+	width: 400px;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.back-button {
+	margin-left: 100px;
+}
+h2 {
+	margin-top: 0;
+}
+
+h2, h1, p {
+	padding-left: 5px;
+}

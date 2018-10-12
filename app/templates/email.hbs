@@ -1,0 +1,16 @@
+{{#link-to "index"}}
+	<a href="#" class="btn btn-info btn-lg back-button">
+        <span class="glyphicon glyphicon-chevron-left"></span> Back
+    </a>
+{{/link-to}}
+
+	<a href="#" class="btn btn-info btn-lg" onclick={{action "deleteEmail" model}}>
+         <span class="glyphicon glyphicon-trash"></span> Trash 
+     </a>
+
+<div class="content">
+	<h2>From : {{model.from}}</h2>
+	<h2>To : {{model.to}}</h2>
+	<h1>Subject: {{model.subject}}</h1>
+	<p>{{model.message}}</p>
+</div>
