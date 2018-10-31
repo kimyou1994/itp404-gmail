@@ -7,7 +7,7 @@
 <a href="#" class="btn btn-info btn-lg" onclick={{action "deleteEmail" model}}>
     <span class="glyphicon glyphicon-trash"></span> Trash 
 </a>
-<StarButton class="star" @starred={{starred}} @onClick={{action "star"}} />
+<StarButton class="star" @starred={{model.starred}} @onClick={{action "star"}} />
 
 <div class="content">
 	<h2>From : {{model.from}}</h2>

@@ -9,7 +9,7 @@ export default Controller.extend({
 				to: this.to,
 				subject: this.subject,
 				message: this.message,
-				starred: false
+				starred: this.starred
 			});
 			email.save().then(() => {
 				this.transitionToRoute('index');
