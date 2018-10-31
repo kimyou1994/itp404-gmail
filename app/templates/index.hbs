@@ -1,12 +1,20 @@
 <ul>
+	<h2>Starred</h2>
   {{#each model as |email|}}
-    <li>
-      {{#link-to "email" email.id}}
-        {{email.from}}<br>
-        <p class="message">{{email.message}}</p>
-      {{/link-to}}
-      <hr>
-    </li>
+  	<SingleEmail @starSelected={{true}} @email={{email}}/>
+  	
+   <!-- <li>
+    	<StarButton @starred={{email.starred}} @onClick={{action "star" email email.id}} />
+	    {{#link-to "email" email.id}}
+	        {{email.from}}<br>
+	        {{truncate-text email.message 85}}
+	    {{/link-to}}
+	    <hr>
+    </li>-->
+  {{/each}}
+  <h2>Unstarred</h2>
+  {{#each model as |email|}}
+  	<SingleEmail @starSelected={{false}} @email={{email}}/>
   {{/each}}
 </ul>
 {{outlet}}

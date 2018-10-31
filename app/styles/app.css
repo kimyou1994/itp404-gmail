@@ -19,16 +19,14 @@ ul {
 	padding: 5px;
 }
 
+.star {
+	margin-left: 100px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
 .content {
 	margin-left: 100px;
 	border: 1px solid black;
-}
-
-.message {
-	width: 400px;
-  	white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
 }
 
 .back-button {

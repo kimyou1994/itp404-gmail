@@ -7,5 +7,6 @@ export default Route.extend({
 		controller.set('to', '');
 		controller.set('subject', '');
 		controller.set('message', '');
+		controller.set('starred', false);
 	}
 });
