@@ -1,7 +1,7 @@
-<a href="#" onclick={{action "click"}} class="btn btn-info btn-lg">
+<a href="#" data-test="star-test" onclick={{action "click"}} class="btn btn-info btn-lg  {{starred}}">
 	{{#if @starred}}
-    	<span class="glyphicon glyphicon-star"></span> Star
+    	<span data-test="starred-email" class="glyphicon glyphicon-star"></span> Star
     {{else}}
-    	<span class="glyphicon glyphicon-star-empty"></span> Star
+    	<span data-test="unstarred-email" class="glyphicon glyphicon-star-empty"></span> Star
     {{/if}}
 </a>

@@ -1,7 +1,9 @@
 <ul>
 	<h2>Starred</h2>
   	{{#each model as |email|}}
+
   		<SingleEmail @starSelected={{true}} @email={{email}}/>
+  		
   	
    <!-- <li>
     	<StarButton @starred={{email.starred}} @onClick={{action "star" email email.id}} />
@@ -14,7 +16,7 @@
   	{{/each}}
  	<h2>Unstarred</h2>
   	{{#each model as |email|}}
-  		<SingleEmail @starSelected={{false}} @email={{email}}/>
+  		<SingleEmail  @starSelected={{false}} @email={{email}}/>
   	{{/each}}
 </ul>
 {{outlet}}
